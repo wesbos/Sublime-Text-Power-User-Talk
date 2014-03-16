@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sublime Text Power User - jQueryTO</title>
+
+    <meta charset='utf-8'>
+    <!--  sorry jquery you aren't needed for this talk <script src="jquery.js"></script> -->
+    <script src='slides.js'></script>
+  </head>
+  
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    h3.banner {
+        width:900px;
+        background:rgba(0,0,0,0.8);
+        color:#fff;
+        padding:20px;
+        position: absolute;
+        left:0;
+        bottom:60px;
+    }
+
+    .answer {
+        margin-top:50px;
+        color:red;
+    }
+
+    .top {
+        margin-top:0;
+    }
+
+    
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>  
+      
+
+      <article class="first" >
+        <h1>
+            Become a Sublime Text <br>
+            Power User  
+        </h1>
+        <h2>— Canadian sized hot tips —</h2>
+          Wes Bos
+          <br>
+          <a href="http://wesbos.com">wesbos.com</a>
+          <br><a href="http://twitter.com/wesbos">@wesbos</a><br>
+            </p>
+          <p>jQuery Toronto, March 15, 2014</p>
+      
+      </article>
+
+      <article>
+        <h1>I'm Wes Bos</h1>
+        <br> <!-- oops I accidentally br -->
+        <h2>These slides will be available shortly after this talk.</a></h2>
+        <br> <!-- oops I accidentally br -->
+        <img src="images/Twitter_logo_white.png" width="300" alt="">
+        <h2>Tweet your hot tips to <a href="http://twitter.com/wesbos" target="_blank">@wesbos</a></h2>
+      </article>
+
+      <article>
+        <img src="images/robbie.jpg" style="width:100%; max-height:none;" alt="">
+      </article>
+
+      <article style="background:white;">
+        <img src="images/cover.png" style="max-height:100%;" alt="">
+      </article>
+
+      <article style="background:white;">
+        <img src="images/hackerYou-logomark.png" style="max-height:100%;" alt="">
+        <h3><a href="http://hackeryou.com" style="color:#D12026;" target=_blank>HackerYou.com</a></h3>
+      </article>
+
+      <article>
+        <h2>Developers are slow</h2>
+        <h3>Both major and minor inefficiencies add up to hours of lost productivity</h3>
+        <img src="images/slow.gif" alt="">
+        <h3>This should make you cringe</h3>
+      </article>
+
+      <article>
+        <h2>Developers are error prone</h2>
+        <img src="images/oops.png" alt="">
+      </article>
+
+      <article>
+        <h2>Open any file</h2>
+        <h3>The mouse is for suckers</h3>
+        <p>
+          <code>⌘</code> + <code>P</code>
+          <!-- <img src="http://wes.io/UPKu/what" > -->
+          <br>
+          <img style="width:100%" src="images/open-file.gif" alt="">
+        </p>
+      </article>      
+
+      <article>
+        <h2>Go to symbol</h2>
+        <h3>like CSS Selectors or JavaScript functions!</h3>
+        <p>
+          <code>⌘</code> + <code>R</code>
+          <!-- <img src="http://wes.io/UP1U/lol" > -->
+          <video src="images/toggle.mov" autoplay loop></video>
+        </p>
+      </article>
+
+      <article>
+        <h2>Multiple Carets</h2>
+        <p>
+          <code>⌘</code> + <code>click</code>
+          <h3>or</h3>
+          <code>⌘</code> + <code>option</code> + <code>drag</code>
+          <img src="images/mv.gif" >
+        </p>
+      </article>
+
+      <article>
+        <h2>Wrap Selection in Tag</h2>
+        <p>
+          <code>CTRL</code> + <code>shift</code> + <code>W</code>
+          <img src="images/wrap.gif" >
+        </p>
+      </article>
+
+      <article>
+        <h2>Line Bubbling</h2>
+        <p>
+          <code>⌘</code> + <code>ctrl</code> + <code>↕</code>
+          <img src="images/bubble.gif" >
+        </p>
+      </article>
+
+      <article>
+        <h2>Expand to Quotes</h2>
+        <h3>requires this <a href="https://github.com/kek/sublime-expand-selection-to-quotes">package</a></h3>
+        <p>
+          <code>ctrl</code> + <code>'</code>
+          <img src="images/string.png" >
+        </p>
+      </article>
+
+
+      <article>
+        <h2>Paste and Indent!</h2>
+        <h3>Stop re-indenting after pastes</h3>
+        <p>
+          <code>⌘</code> + <code>shift</code> + <code>v</code>
+          <img src="images/paste-n-indent.gif" >
+        </p>
+      </article>
+
+      <article>
+        <h2>OSX dialog keyboard access</h2>
+        <h3>Turn this on in System Prefs → Keyboard → Shortcuts → All Controls</h3>
+        <p>
+          <code>spacebar</code> → Don't Save -OR-
+          <code>return</code> → Save
+          <img src="images/dialog.gif" alt="">
+          <!-- <img src="http://wes.io/UP8a/lol" > -->
+        </p>
+      </article>
+
+      <article>
+       <img src="images/stpc.png" >
+       <h2>8 Packages to speed up your workflow and make life awesome!</h2>
+       <h3>Serious. You gotta get these!</h3>
+      </article>
+
+      <article class="package">
+        <img src="images/logo.svg" width="400">
+        <h2>Emmet</h2>
+      </article>
+
+      <article>
+        <h2>Emmet for HTML</h2>
+        <h3>Also works with HAML and Slim!</h3>
+        <img src="images/emmet-html.gif" alt="">
+        <br>
+        <a href="http://docs.emmet.io/cheat-sheet/">Cheat Sheet</a>
+      </article>
+
+      <article>
+        <h2>Emmet for CSS</h2>
+        <h3>Better than snippets, finds the best fit based on what you have typed in!</h3>
+        <img src="images/emmet-css.gif">
+      </article>
+
+      <article>
+        <h2>Emmet for anything: Value Bumping</h2>
+        <h3>Increment or Decrement just like DevTools, woah!</h3>
+        
+        <code>option</code> + <code>↕</code> by 0.1
+        <br>
+        <code>control</code> + <code>↕</code> by 1
+        <br>
+        <code>⌘</code> + <code>option</code> + <code>↕</code> by 10
+        <img src="images/bumpin.gif" alt="">
+      </article>
+
+      <article>
+        <h2>JS-Hint Gutter Linter
+          <a href="https://sublime.wbond.net/packages/JSHint%20Gutter">๏</a>
+        </h2>
+        <h3>Realtime JS-Hint feedback</h3>
+        <img src="images/badjs.png" >
+      </article>
+
+      <article>
+        <h2>Origami
+          <a href="https://sublime.wbond.net/packages/Origami">๏</a>
+        </h2>
+        <h3>Better multi-pane switching and splitting</h3>
+        <img src="images/woah.png" >
+      </article>
+
+<!--       <article>
+        <h2>Sidebar Enhancements
+          <a href="https://sublime.wbond.net/packages/SideBarEnhancements">๏</a>
+        </h2>
+        <h3></h3>
+        <img src="http://wes.io/UOuI/woah" >
+      </article>
+ -->
+
+    <article>
+      <h2>Autofilename
+        <a href="https://sublime.wbond.net/packages/AutoFileName">๏</a>
+      </h2>
+      <h3>File Completion in HTML + CSS</h3>
+      <img src="images/autofilename.gif" >
+    </article>
+
+    <article>
+      <h2>JavaScriptNext ES6 Syntax Highlighting
+        <a href="https://sublime.wbond.net/packages/JavaScriptNext%20-%20ES6%20Syntax">๏</a>
+      </h2>
+      <h3>Nicer JavaScript Syntax highlighting, supports ES6</h3>
+      <h3>Regular JavaScript VS JavaScriptNext</h3>
+      <img src="images/seriously.png">
+
+    </article>
+
+    
+    <article>
+      <h2>Gutter Color
+        <a href="https://sublime.wbond.net/packages/Gutter%20Color">๏</a>
+      </h2>
+      <h3>Show your HEX and RGB colours in your gutter</h3>
+      <img src="images/gutter-colour.gif" >
+    </article>
+
+    <article>
+      <h2>CSS3 Syntax Highlighting
+        <a href="https://github.com/i-akhmadullin/Sublime-CSS3">๏</a>
+      </h2>
+      <h3>Wake up ST! This ain't 2009 anymore</h3>
+      <img src="images/gtfo.png" >
+    </article>
+
+    <article>
+      <h2>GitGutter
+        <a href="https://sublime.wbond.net/packages/GitGutter">๏</a>
+      </h2>
+      <h3>Git statuses in your gutter</h3>
+      <img src="images/gitgutter.gif" >
+    </article>
+
+
+    <article>
+      <h1>Pimp Yo Editor</h1>
+      <img src="images/pimp.jpg" >
+    </article>
+
+    <article>
+        <h2>A darker colour scheme can save your eyeballs</h2>
+        <img src="images/eyeballs.png" >
+        <h3>Check out <a href="https://github.com/wesbos/cobalt2" target=_blank>Cobalt2</a> or <a href="https://github.com/buymeasoda/soda-theme/" target="_blank">Soda</a></h3>
+    </article>
+
+    <article>
+      <h2>Crisp and clear syntax highlighting will cut down on coding errors</h2>
+      <img src="images/syntax.png" >
+    </article>
+
+    <article>
+      <h2>Highlight the current line</h2>
+      <h3>"highlight_line": true</h3>
+      <img src="images/currentLine.png">
+    </article>
+
+    <article>
+      <h2>Increase your caret</h2>
+      <h3>"caret_extra_bottom": 2</h3>
+      <h3>"caret_extra_top": 2</h3>
+      <h3>"caret_extra_width": 4</h3>
+      <h3>"caret_style": "solid"</h3>
+      <h3>"wide_caret": true</h3>
+      <img src="images/yeah.png" alt="">
+    </article>
+
+    <article>
+      <h2>Match Brackets and Tags</h2>
+      <h3>"match_brackets": true, "match_brackets_angle": true,</h3>
+      <h3>"match_brackets_braces": true,
+      "match_brackets_content": true,
+      "match_brackets_square": true</h3>
+
+      <img src="images/match1.png">
+      <img src="images/match2.png">
+      <img src="images/match3.png" alt="">
+
+    </article>
+
+    <article>
+      <h2>Highlight modified tabs</h2>
+      <h3>Forgetting to save is the #1 problem in computer science - Wes Bos</h3>
+      <h3>"highlight_modified_tabs": true</h3>
+      <img src="images/mod.png">
+    </article>
+
+    <article>
+      <h2>Increase Line Height</h2>
+      <p>We do this for our text, why not code?</p>
+      <h3>"line_padding_bottom": 1,</h3>
+      <h3>"line_padding_top": 1,</h3>
+      <img style="width:50%; float:left;" src="images/linePaddingBefore.png" alt="">
+      <img style="width:50%; float:left;" src="images/linePaddingAfter.png" alt="">
+      <h3>Such a small change that helps with readability and scanning code</h3>
+    </article>
+
+    <article>
+      <h2>Bold Folder Labels</h2>
+      <h3>Folders !== Files. Why style them the same?</h3>
+      <h3>"bold_folder_labels": true</h3>
+      <img src="images/boldFolders.png" alt="">
+    </article>
+
+    <article>
+      <h2>Indentation Guidelines</h2>
+      <h3>"indent_guide_options": ["draw_normal", "draw_active"]</h3>
+      <img src="images/indentation.png" alt="">
+      <h3>Your theme must support these colours <a href="https://github.com/wesbos/cobalt2">Cobalt2</a> does</h3>
+    </article>
+
+    <article style="background:white;">
+      <img src="images/cover.png" height="400" style="margin-top:20px;" alt="">
+      <div id="mc_embed_signup2">
+        <form class="validate" id="mc-embedded-subscribe-form" action="http://wesbos.us1.list-manage.com/subscribe/post?u=b18fd2807ed1a9249c7ea8961&amp;id=20fbc2c1a5" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+          <h4>Let me know when this book launches</h4>
+          <p>Enter your email address below and I’ll give you a hoot when its ready plus a discount code for being so great!</p>
+          <p><input class="email" id="mce-EMAIL" type="email" name="EMAIL" placeholder="email address" required="" value=""><input class="button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Go!"></p>
+        </form>
+      </div>
+
+      <style>
+        #mc_embed_signup {
+          width:100%;
+          text-align:center;
+          background:#efefef;
+          padding:5px;
+          margin-bottom:10px;
+          border:1px solid #c2c2c2;
+          box-sizing: border-box;
+        }
+
+        #mc_embed_signup2 * {
+          box-sizing: border-box;
+        }
+        #mc_embed_signup p { font-size:14px; }
+        #mc_embed_signup input {
+          border:1px solid #a7a7a7;
+          padding:5px;
+          font-size:16px;
+        }
+        #mc_embed_signup input[type=submit] { background:#ecd018; }
+        img.wp-post-image { max-width:none !important; }
+        #mc_embed_signup2 {
+          /*background:url(http://wesbos.com/wp-content/uploads/2013/01/signup.png) top center no-repeat;*/
+          width:100%;
+          padding:20px;
+          box-sizing: border-box;
+          /*padding-left:260px;*/
+          /*padding-top:50px;*/
+          /*padding-right:30px;*/
+          margin:10px 0;
+        }
+        #mc_embed_signup2 h4 { font-size:26px; }
+        #mc_embed_signup2 input[type=email] {
+          border:1px solid #e7cc05;
+          padding:10px;
+          width:80%;
+        }
+        #mc_embed_signup2 form { position:relative; }
+
+      </style>
+    </article>
+
+    </section>
+
+  </body>
+</html>

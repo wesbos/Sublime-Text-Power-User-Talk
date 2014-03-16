@@ -1,0 +1,12 @@
+.wrapper {
+  color: #BADA55;
+  background: #000;
+  border-bottom: 1px solid  #d12026;
+}
+
+
+.wrapper {
+  color: #bada55;
+  background: #000;
+  border-bottom: -1px solid  #d12026;
+}
