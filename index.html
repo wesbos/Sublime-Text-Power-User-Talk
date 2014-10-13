@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Sublime Text Power User - jQueryTO</title>
+    <title>Sublime Text Power User</title>
 
     <meta charset='utf-8'>
     <!--  sorry jquery you aren't needed for this talk <script src="jquery.js"></script> -->
@@ -21,7 +21,9 @@
         left:0;
         bottom:60px;
     }
-
+    video {
+      max-width: 100%;
+    }
     .answer {
         margin-top:50px;
         color:red;
@@ -50,25 +52,27 @@
           <a href="http://wesbos.com">wesbos.com</a>
           <br><a href="http://twitter.com/wesbos">@wesbos</a><br>
             </p>
-          <p>jQuery Toronto, March 15, 2014</p>
+          <p>CSS Dev Conf, Oct 13 2014</p>
       
       </article>
 
       <article>
         <h1>I'm Wes Bos</h1>
         <br> <!-- oops I accidentally br -->
-        <h2>These slides will be available shortly after this talk.</a></h2>
+        <h2>These slides will be available shortly after this talk - I'll tweet the link out.</a></h2>
         <br> <!-- oops I accidentally br -->
         <img src="images/Twitter_logo_white.png" width="300" alt="">
         <h2>Tweet your hot tips to <a href="http://twitter.com/wesbos" target="_blank">@wesbos</a></h2>
       </article>
 
-      <article>
-        <img src="images/robbie.jpg" style="width:100%; max-height:none;" alt="">
+      <article style="background:white url(images/thanksgiving.gif) center no-repeat; background-size:contain;">
+        <img src="">
       </article>
 
       <article style="background:white;">
-        <img src="images/cover.png" style="max-height:100%;" alt="">
+        <a href="https://SulbimeTextBook.com/?utm_source=sttalk&utm_medium=link&utm_campaign=talkpromo">
+          <img src="images/cover.png" style="max-height:100%;" alt="">
+        </a>
       </article>
 
       <article style="background:white;">
@@ -105,7 +109,7 @@
         <p>
           <code>⌘</code> + <code>R</code>
           <!-- <img src="http://wes.io/UP1U/lol" > -->
-          <video src="images/toggle.mov" autoplay loop></video>
+          <video src="images/toggle.mov" autoplay muted controls loop></video>
         </p>
       </article>
 
@@ -124,6 +128,15 @@
         <p>
           <code>CTRL</code> + <code>shift</code> + <code>W</code>
           <img src="images/wrap.gif" >
+        </p>
+      </article>
+
+      <article>
+        <h2>or Wrap with Emmet!</h2>
+        <p>Use any Emmet/css expansion you know of!</p>
+        <p>
+          <code>CTRL</code> + <code>W</code>
+          <video src="videos/wrap-with-emmet.mov" autoplay muted loop></video>
         </p>
       </article>
 
@@ -178,7 +191,7 @@
 
       <article>
         <h2>Emmet for HTML</h2>
-        <h3>Also works with HAML and Slim!</h3>
+        <h3>Also works with HAML, Jade and Slim!</h3>
         <img src="images/emmet-html.gif" alt="">
         <br>
         <a href="http://docs.emmet.io/cheat-sheet/">Cheat Sheet</a>
@@ -208,6 +221,14 @@
         </h2>
         <h3>Realtime JS-Hint feedback</h3>
         <img src="images/badjs.png" >
+      </article>
+
+      <article>
+        <h2>GhostText for Chrome + Sublime
+          <a href="https://sublime.wbond.net/packages/GhostText">๏</a>
+        </h2>
+        <p>Don't you wish you could use Sublime for everything? Link any textarea with Sublime!</p>
+        <video src="videos/sublime-ghost.m4v" muted loop autoplay></video>
       </article>
 
       <article>
@@ -255,6 +276,14 @@
     </article>
 
     <article>
+      <h2>Color Highlighter
+        <a href="https://sublime.wbond.net/packages/Color%20Highlighter">๏</a>
+      </h2>
+      <h3>View your HEX and RGB colours inline!</h3>
+      <img src="images/color-highlighter.png" >
+    </article>
+
+    <article>
       <h2>CSS3 Syntax Highlighting
         <a href="https://github.com/i-akhmadullin/Sublime-CSS3">๏</a>
       </h2>
@@ -268,6 +297,14 @@
       </h2>
       <h3>Git statuses in your gutter</h3>
       <img src="images/gitgutter.gif" >
+    </article>
+
+    <article>
+      <h2>Takana
+        <a href="http://usetakana.com/">๏</a>
+      </h2>
+      <h3>Instantly Live edit Sass</h3>
+      <video play src="videos/takana.mov" muted loop autoplay></video>
     </article>
 
 
@@ -347,60 +384,34 @@
       <h3>Your theme must support these colours <a href="https://github.com/wesbos/cobalt2">Cobalt2</a> does</h3>
     </article>
 
+    <article>
+      <h1>Investing time in <em>any</em> editor will make you a better developer.</h1>
+      <p>Atom and Vim are amazing editors - your workflows are transferable to or from Sublime Text. Spend your time becoming amazing at your editor!</p>
+      <img width="250" src="http://gapcode.com/atom-editor-icon/1/atom-icon.png" alt="">
+      <img width="250" src="http://www.elfnet.org/wp-content/uploads/2011/10/Vim_logo.png" alt="">
+      
+    </article>
+
     <article style="background:white;">
       <img src="images/cover.png" height="400" style="margin-top:20px;" alt="">
-      <div id="mc_embed_signup2">
-        <form class="validate" id="mc-embedded-subscribe-form" action="http://wesbos.us1.list-manage.com/subscribe/post?u=b18fd2807ed1a9249c7ea8961&amp;id=20fbc2c1a5" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
-          <h4>Let me know when this book launches</h4>
-          <p>Enter your email address below and I’ll give you a hoot when its ready plus a discount code for being so great!</p>
-          <p><input class="email" id="mce-EMAIL" type="email" name="EMAIL" placeholder="email address" required="" value=""><input class="button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="Go!"></p>
-        </form>
-      </div>
+      <p>Book + Video Package now available</p>
+      <p>Use coupon code <code>CSSDEVCONF</code> for $15 off any package.</p>
+      <p><a href="https://SulbimeTextBook.com/?utm_source=sttalk&utm_medium=link&utm_campaign=talkpromo">SublimeTextBook.com</a></p>
 
-      <style>
-        #mc_embed_signup {
-          width:100%;
-          text-align:center;
-          background:#efefef;
-          padding:5px;
-          margin-bottom:10px;
-          border:1px solid #c2c2c2;
-          box-sizing: border-box;
-        }
+    </article>
 
-        #mc_embed_signup2 * {
-          box-sizing: border-box;
-        }
-        #mc_embed_signup p { font-size:14px; }
-        #mc_embed_signup input {
-          border:1px solid #a7a7a7;
-          padding:5px;
-          font-size:16px;
-        }
-        #mc_embed_signup input[type=submit] { background:#ecd018; }
-        img.wp-post-image { max-width:none !important; }
-        #mc_embed_signup2 {
-          /*background:url(http://wesbos.com/wp-content/uploads/2013/01/signup.png) top center no-repeat;*/
-          width:100%;
-          padding:20px;
-          box-sizing: border-box;
-          /*padding-left:260px;*/
-          /*padding-top:50px;*/
-          /*padding-right:30px;*/
-          margin:10px 0;
-        }
-        #mc_embed_signup2 h4 { font-size:26px; }
-        #mc_embed_signup2 input[type=email] {
-          border:1px solid #e7cc05;
-          padding:10px;
-          width:80%;
-        }
-        #mc_embed_signup2 form { position:relative; }
+    <article>
+      
 
-      </style>
+      <h1 style="font-size:80px; margin-top:120px;  ">Q & Eh?</h1>
+      <p>Questions, Comments? What is your favourite tip?</p>
+      
+      <p style="font-size: 90px; color:white; line-height:1;margin-top: 40px">Text <br><span>#sublime 5 awesome!</span> to 504-229-6828</p>
+
     </article>
 
     </section>
+
 
   </body>
 </html>
